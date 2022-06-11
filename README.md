@@ -35,8 +35,8 @@ The criterion used during training to derive loss was binary cross entropy loss.
 
 ## Results
 ### Loss
-The following plot shows the training loss curves vs batch iteration for both the generator and discriminator as they trained in parallel over 100 epochs. These networks are playing a 'zero-sum game', and so the loss curves reflect this jostling effect over the training period.
-![Training losses for G and D](/data/figures/losses.png)
+The following plot shows the training loss curves vs batch iteration for both the generator and discriminator as they trained in parallel over 200 epochs. These networks are playing a 'zero-sum game', and so the loss curves reflect this jostling effect over the training period.
+![Training losses for G and D](/data/figures/final_losses.png)
 
 ### Synthetic Images
 During the training process, the generator was given the same randomly initialized input vector at the end of each epoch to produce 64 images. The results provide a benchmark for the model's performance over the training period. A selection of the generated images are shown below, and the complete set of collected images can be found in `data/figures`. Notice as the generator trained for longer, we begin to see the synthetic images take on shapes more similar to the training set than to random noise shown in the first image. I believe these images demonstrate the model has successfully learned from the dataset.
@@ -45,6 +45,10 @@ During the training process, the generator was given the same randomly initializ
 ![Sample synthetic images](/data/figures/epoch100gen.png)
 ![Sample synthetic images](/data/figures/epoch150gen.png)
 ![Sample synthetic images](/data/figures/epoch200gen.png)
+
+### Training Images
+For reference, the following shows a random sample of 64 images from the training dataset.
+![Sample synthetic images](/data/figures/training_images.png)
 
 ## Conclusions
 In my opinion, the final images do not look like Pokémon; however, I believe it is remarkable how the final image sets produce continuous blobs of color gradients, despite the generator initially producing a random distribution of color in the images. Several of the images even have solid, single-color backgrounds behind the centered color blobs, which may indicate the model was improving its ability to distinguish background elements from the Pokémon present in the training set. 
