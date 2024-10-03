@@ -55,9 +55,6 @@ In my opinion, the final images do not look like Pokémon; however, I believe it
 
 To continue improving this model, I would experiment with different optimizers and training periods. As shown above, the model appears to perform better the longer it trains. Training time quickly became a limitation during the course of this project, and so I had to choose a range that gave interesting results, but could be completed in a reasonable amount of time. Lastly, I would attempt to find a larger dataset. With more training instances, the model may be able to learn more features of Pokémon and produce more 'realistic' and original images. Further, the art style of each generation of Pokémon is remarkably different, and so collecting images from other generations may produce a larger variety of Pokémon styles.
 
-## Video Link
-[Presentation video](https://youtu.be/kXEjGMVFw1o)
-
 ## Sources
 1. [Pokémon dataset](https://www.kaggle.com/datasets/lantian773030/pokemonclassification) from Kaggle
 2. [Pytorch GAN tutorial](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
